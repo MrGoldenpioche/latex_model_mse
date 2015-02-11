@@ -8,8 +8,9 @@ LaTeX template for MSE semester and thesis reports.
 This template provides a LaTeX class which simply replaces and extends the standard directive `report`.
 
 ### Without Git
+This template is based on (https://github.com/njakob/template-latex/releases) and modified for my needs. Thanks to Nicolas Jakob
 
-You can simply check out [releases](https://github.com/njakob/template-latex/releases) and download [last zip package](https://github.com/njakob/template-latex/archive/v2.1-package.zip).
+This updated model is available at (https://github.com/gremaudc/latex_model_mse)
 
 *It is recommended that you configure your workspace as shown below, then it will be easy to keep it updated.*
 
@@ -18,12 +19,7 @@ You can simply check out [releases](https://github.com/njakob/template-latex/rel
 Create a new folder for your report, then run git clone command.
 
 ```shell
-$ git clone git@github.com:njakob/template-latex.git
-```
-
-Then copy an example from `/examples` folder into your workspace.
-```shell
-$ cp -a template-latex/examples/simple-report/* ./
+$ git clone git@github.com:gremaudc/latex_model_mse.git
 ```
 
 Now you can start to write your report in `thesis.tex`.
@@ -35,25 +31,6 @@ Create a new folder for your report, and then initialize your repository as usua
 ```shell
 $ git init
 $ git remote add origin <remote-location-of-your-git>
-```
-
-Then you can link this template with your repository with git submodule.
-
-```shell
-$ git submodule add git@github.com:njakob/template-latex.git ./template-latex
-```
-
-This sub-module will work the same way as a normal repository. For example, you can change the version as shown below. More documentation could be found at <http://git-scm.com/book/en/Git-Tools-Submodules>.
-
-```shell
-$ cd ./template-latex
-$ git checkout v2.1
-$ cd ..
-```
-
-Then copy an example from `/examples` folder into your workspace.
-```shell
-$ cp -a template-latex/examples/simple-report/* ./
 ```
 
 Now you can start to write your report in `thesis.tex`.
@@ -91,9 +68,9 @@ Path to this document class.
 ### Type
 
 Type: `String` Default: `thesis`
-Accept: `semester`, `thesis`
+Accept: `semester`, `thesis`, `deepening`
 
-Define whether it is a semester project or thesis.
+Define whether it is a semester project, thesis, or a deepening project (PA).
 
 ## Metadata
 
@@ -109,13 +86,13 @@ Example: `\advisor{Prof. John Doe}`
 
 Your full name.
 
-Example: `\author{Nicolas Jakob}`
+Example: `\author{Cyrill Gremaud}`
 
 ### Contact
 
 Your e-mail address.
 
-Example: `\contact{nicolas.jakob@master.hes-so.ch}`
+Example: `\contact{gremaudc@gmail.com}`
 
 ### Expert
 
@@ -154,7 +131,7 @@ Example:
 
 Title of your report.
 
-Example: `\title{\LaTeX\ Thesis Template}`
+Example: `\title{\LaTeX\ Model MSE}`
 
 ### Professor
 
