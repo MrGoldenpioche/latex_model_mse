@@ -1,0 +1,97 @@
+\newcommand{\msepath}{./template-latex}
+\documentclass[
+   major=tic,
+   type=deepening,		% added "deepening" key work. You can use "thesis" or "semester" too
+   confidential=false,
+   lang=en,
+   path=\msepath,
+   % report options
+   twoside
+]{\msepath/mse-thesis}
+
+\title{Breaking RSA cryptosystem in 27 seconds}
+\author{Mr. Cyrill Gremaud}
+\contact{cyrill.gremaud@hefr.ch}
+\professor{
+   Mr. Linus Torvald
+   \institute{Linux Foundation}
+   \email{linus@torvald.org}
+   \and
+   Mr. Adi Shamir
+   \institute{RSA Foundation}
+   \email{adi.shamir@rsa.org}
+}
+\expert{
+   Mr. Ron Rivest
+   \institute{RSA Foundation}
+   \email{ron.rivest@rsa.org}
+}
+\version{Version 1}
+\proposedby{
+   Mr. Jack Sparrow
+   \institute{Idle islands AG}
+   \email{j.s@is.com}
+}
+\advisor{Mr. Linus Torvald}
+\headofmse{Fariba Moghaddam Bützberger}
+
+% information for students where project takes place abroad - simply remove
+% these lines else
+%\supervisor{
+%   Prof. John Doe
+%   \institute{HES-SO}
+%   \email{john.doe@nowhere.com}
+%}
+%\location{
+%   Institute which is aboard
+%   \institute{HES-SO}
+%}
+
+
+\addbibresource{bibliography.bib}
+\input{glossary.tex}
+
+\makeglossaries
+
+\begin{document}
+
+   % Preamble #################################################################
+
+   \pagenumbering{roman}
+
+   \input{chapters/abstract}
+   \input{chapters/acknowledgments}
+
+   % Table of Contents ########################################################
+
+   \inserttoc
+
+   % Chapters #################################################################
+
+   \pagenumbering{arabic}
+   
+   \input{chapters/introduction}
+   \input{chapters/analysis}
+   \input{chapters/design}
+   \input{chapters/prototyping}
+   \input{chapters/conclusion}
+
+   % Bibliography & Lists & Glossary ##########################################
+	
+   \insertglossary %to do
+   \insertbibliography
+   \insertlof
+   \insertlot
+   %\insertlol
+   
+  
+
+   % Appendix #################################################################
+
+   \begin{appendix}
+      \input{appendices/cd-rom-content}
+      \input{appendices/recommanded-reading}
+      \input{appendices/source-code-repository}
+   \end{appendix}
+
+\end{document}

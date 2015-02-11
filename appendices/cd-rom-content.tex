@@ -1,0 +1,23 @@
+\chapter{CD-ROM Content}
+\label{sec:cd-rom-content}
+\thispagestyle{fancy}
+
+In addition to this rapport, a CD-ROM is provided, containing the following documents and folders:
+
+%http://mirror.switch.ch/ftp/mirror/tex/macros/generic/dirtree/dirtree.pdf
+\renewcommand*\DTstylecomment{\rmfamily\color{black}}
+\renewcommand*\DTstyle{\rmfamily\textcolor{blue}}
+
+\dirtree{%
+	.1 .
+	.1 README\.txt\DTcomment{This description}.
+	.1 10\_admin\DTcomment{Files related to the administration}.
+	.1 20\_meeeting\_minutes\DTcomment{All weekly and monthly minutes}.
+	.1 30\_rsa\_doc\DTcomment{Documentations provided by RSA.org}.
+	.1 40\_linux\_doc\DTcomment{Documentations provided by linux.org}.
+	.2 00\_Specs.
+	.1 50\_rapport\DTcomment{Files of this report and all \LaTeX sources}.
+	.1 60\_other\_ressources\DTcomment{All others resources used during this project}.
+}
+
+\clearemptydoublepage

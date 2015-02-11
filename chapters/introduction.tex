@@ -1,0 +1,72 @@
+\chapter{Introduction}
+\label{sec:introduction}
+\thispagestyle{fancy}
+
+\lipsum[4]
+
+\section{Context}
+\lipsum[2]
+
+\section{Objectives}
+\lipsum[3]
+
+\section{Constraints}
+\lipsum[1]
+
+\begin{landscape}
+\section{Initial planning}
+This planning remains valid subject to minor changes in case of unforeseen. Each column represents a week starting at date of 16th February 2015 and end at date of 5th June 2015.\\
+
+\vspace*{\fill}
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\begin{ganttchart}[
+		canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+		hgrid,
+		vgrid,
+		title/.style={draw=black!5, fill=none},
+		title label font=\bfseries\footnotesize,
+		include title in canvas=false,
+		bar label font=\mdseries\scriptsize\color{black!70},
+		bar/.append style={draw=none, fill=barblue},
+		bar height=.5,
+		group/.append style={fill=groupblue},
+		group height=.4,
+		group peaks height=0.2,
+		group label font=\bfseries\footnotesize,
+		milestone left shift=0.9,
+		milestone right shift=0.1,
+		milestone label font=\mdseries\scriptsize\bf\color{linkred},
+		milestone/.append style={fill=linkred},
+		y unit chart=0.55cm,
+		x unit=.99cm,
+	]{1}{18}
+
+	\gantttitlelist{1,...,12}{1} \\
+	\ganttset{progress label text={}, link/.style={black, -to}}
+
+	\ganttgroup{Administrative}{1}{2}\\
+	\ganttbar{Project requirements \& planning}{1}{2}\\
+	\ganttbar{Scope of the project}{1}{2}\\
+	\ganttmilestone{Scope \& objectives}{2}\\
+
+	\ganttgroup{Analysis}{2}{8}\\
+	\ganttbar{Current architecture}{2}{3}\\
+	\ganttbar{Current product}{4}{5}\\
+	\ganttbar{Possible implementations}{6}{7}\\
+	\ganttmilestone{Potential best solution}{8}\\
+	
+	\ganttgroup{Prototyping}{9}{12}\\
+	\ganttbar{VM analysis}{9}{10}\\
+	\ganttbar{Tests}{10}{12}\\
+
+	\ganttgroup{Documentation}{1}{12}\\
+	\ganttbar{State of the art}{1}{2}\\
+	\ganttbar{Report Writing}{2}{12}\\
+	\ganttmilestone{Report}{12}\\
+\end{ganttchart}
+\vspace*{\fill}
+\end{landscape}
+
+\clearemptydoublepage
