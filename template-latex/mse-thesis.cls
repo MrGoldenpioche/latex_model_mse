@@ -53,7 +53,7 @@
 \RequirePackage[acronym,toc]{glossaries}
 
 \ifnum\pdf@strcmp{\mse@option@lang}{fr}=0
-	\RequirePackage[frenchb]{babel}
+	\RequirePackage[french]{babel}
     \input{\mse@option@path/mse-thesis-fr.lang}
 \else
 	\RequirePackage[english]{babel}
