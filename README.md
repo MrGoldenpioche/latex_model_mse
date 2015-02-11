@@ -11,6 +11,8 @@ This template provides a LaTeX class which simply replaces and extends the stand
 This template is based on (https://github.com/njakob/template-latex/releases) and modified for my needs. Thanks to Nicolas Jakob
 
 This updated model is available at (https://github.com/gremaudc/latex_model_mse) (here :-))
+
+### What's new ?
 The main differences with this of Nicolas Jakobs are:
 
 - Added new type of report (deepening)
