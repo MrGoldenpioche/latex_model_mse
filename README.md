@@ -1,7 +1,7 @@
 
 # Template-LaTeX
 
-LaTeX template for MSE semester and thesis reports.
+LaTeX template for MSE semester, deepening project, thesis reports.
 
 ## Getting Started
 
@@ -10,7 +10,15 @@ This template provides a LaTeX class which simply replaces and extends the stand
 ### Without Git
 This template is based on (https://github.com/njakob/template-latex/releases) and modified for my needs. Thanks to Nicolas Jakob
 
-This updated model is available at (https://github.com/gremaudc/latex_model_mse)
+This updated model is available at (https://github.com/gremaudc/latex_model_mse) (here :-))
+The main differences with this of Nicolas Jakobs are:
+
+- Added new type of report (deepening)
+- Remove tab space when start a new paragraph with "\\" latex command. Just comment "\usepackage[parfill]{parskip}" in "/template-latex/mse-thesis.cls" if you don't want this feature
+- Add a new bibliography backend "bibtex8" instead of "biber" for compatibility problem. The old option is just commented
+- Add new command to add glossary and acronyms (\insertglossary)
+- Modified structure example to match with the most frequent MSE report structure
+- Add example using dirtree package for CD-ROM listing
 
 *It is recommended that you configure your workspace as shown below, then it will be easy to keep it updated.*
 
