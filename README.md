@@ -199,10 +199,10 @@ Example: `\version{Version 1}`
 To insert a picture : The option `width=\textwidth` fit the picture according to the width of the text.
 
 ```latex
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=\textwidth]{includes/pictures/yourpicture.png}
-%	\caption{my cool picture}
-%	\label{my cool picture}
-%\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{includes/pictures/yourpicture.png}
+	\caption{my cool picture}
+	\label{my cool picture}
+\end{figure}
 ```
