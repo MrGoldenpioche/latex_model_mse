@@ -16,9 +16,9 @@ This updated model is available at (https://github.com/gremaudc/latex_model_mse)
 The main differences with this of Nicolas Jakobs are:
 
 - Added new type of report (deepening)
-- Remove tab space when start a new paragraph with "\\" latex command. Just comment "\usepackage[parfill]{parskip}" in "/template-latex/mse-thesis.cls" if you don't want this feature
+- Remove tab space when start a new paragraph with `\\` latex command. Just comment `\usepackage[parfill]{parskip}` in "/template-latex/mse-thesis.cls" if you don't want this feature
 - Add a new bibliography backend "bibtex8" instead of "biber" for compatibility problem. The old option is just commented
-- Add new command to add glossary and acronyms (\insertglossary)
+- Add new command to add glossary and acronyms (`\insertglossary`)
 - Modified structure example to match with the most frequent MSE report structure
 - Add example using dirtree package for CD-ROM listing
 
@@ -193,3 +193,16 @@ Example:
 Keep track of the published version of your document.
 
 Example: `\version{Version 1}`
+
+### Some useful examples
+
+To insert a picture : The option `width=\textwidth` fit the picture according to the width of the text.
+
+```latex
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=\textwidth]{includes/pictures/yourpicture.png}
+%	\caption{my cool picture}
+%	\label{my cool picture}
+%\end{figure}
+```
