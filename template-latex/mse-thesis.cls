@@ -38,8 +38,9 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{listings}
 \RequirePackage{dirtree}		%to make CD-ROM tree. cyrill gremaud
-\usepackage{lipsum}
-\usepackage[parfill]{parskip} 	%to avoid indent for each new paragraph. simply comment if you don't want. cyrill gremaud
+\RequirePackage{float}
+\RequirePackage{lipsum}
+\RequirePackage[parfill]{parskip} 	%to avoid indent for each new paragraph. simply comment if you don't want. cyrill gremaud
 
 %\RequirePackage[style=ieee, backend=biber]{biblatex}
 
