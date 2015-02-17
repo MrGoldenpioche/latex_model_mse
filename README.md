@@ -202,6 +202,7 @@ To insert a picture : The option `width=\textwidth` fit the picture according to
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{includes/pictures/yourpicture.png}
+	%\includegraphics[scale=0.5]{includes/pictures/yourpicture.png}
 	\caption{my cool picture}
 	\label{my cool picture}
 \end{figure}
