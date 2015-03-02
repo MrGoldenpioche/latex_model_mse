@@ -145,7 +145,8 @@
 % force toc page style -- http://tex.stackexchange.com/questions/5787/table-of-contents-with-page-style-empty
 \addtocontents{toc}{\protect\thispagestyle{fancy}}
 \newcommand{\inserttoc}{
-   \setcounter{tocdepth}{2}
+   \setcounter{secnumdepth}{5}
+   \setcounter{tocdepth}{5}
    \tableofcontents
    \clearemptydoublepage
 }
