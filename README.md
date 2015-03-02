@@ -194,6 +194,17 @@ Keep track of the published version of your document.
 
 Example: `\version{Version 1}`
 
+### Installation notes for Ubuntu 14.10
+
+To compile this template on Ubuntu, some additional package must be installed. Please note that this template has always been compilated with TexStudio
+
+```shell
+sudo apt-get install texstudio texlive-generic-extra texlive-latex-extra texlive-bibtex-extra biber texlive-fonts-recommended 
+```
+
+Please informe me if I have forgotten a package.
+
+
 ### Some useful examples
 
 To insert a picture : The option `width=\textwidth` fit the picture according to the width of the text.
@@ -207,3 +218,19 @@ To insert a picture : The option `width=\textwidth` fit the picture according to
 	\label{my cool picture}
 \end{figure}
 ```
+
+To insert 2 pictures side by side
+
+```latex
+\begin{figure}[h]
+	\begin{minipage}[b]{.5\textwidth}
+		\centering\includegraphics[width=\textwidth]{includes/pictures/yourpicture}
+		\caption{My cool picture 1\label{coolpic1}}
+	\end{minipage}
+	\begin{minipage}[b]{.5\textwidth}
+		\centering\includegraphics[width=\textwidth]{includes/pictures/yourpicture}
+		\caption{My cool picture 2\label{coolpic2}}
+	\end{minipage}
+\end{figure}
+```
+
